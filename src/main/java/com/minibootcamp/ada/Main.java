@@ -2,18 +2,26 @@ package com.minibootcamp.ada;
 
 class Cell {
     int aliveNeighbors;
+    boolean currentState;
 
     public Cell(boolean currentState, int aliveNeighbors) {
         this.aliveNeighbors = aliveNeighbors;
+        this.currentState = currentState;
     }
 
     public boolean getNewState() {
 
-        if (aliveNeighbors < 2) {
-            return false;
-        }
+        if (currentState) {
 
-        if (aliveNeighbors > 3) {
+            if (aliveNeighbors < 2) {
+                return false;
+            }
+
+            if (aliveNeighbors > 3) {
+                return false;
+            }
+        } else {
+
             return false;
         }
 
