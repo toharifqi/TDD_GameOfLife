@@ -11,25 +11,13 @@ class Cell {
 
     public boolean getNewState() {
 
-        if (currentState) {
+        if (currentState){
 
-            if (aliveNeighbors < 2) {
-                return false;
-            }
+            return aliveNeighbors >= 2 && aliveNeighbors <= 3;
+        }else {
 
-            if (aliveNeighbors > 3) {
-                return false;
-            }
-        } else {
-
-            if (aliveNeighbors == 3) {
-                return true;
-            }
-
-            return false;
+            return aliveNeighbors == 3;
         }
-
-        return true;
     }
 }
 
