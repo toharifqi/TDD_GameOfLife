@@ -40,11 +40,15 @@ condensed into the following:
 
 ## How to run test
 
-TBD
+```bash
+./gradlew test
+```
 
 ## Build instruction
 
-TBD
+```bash
+./gradlew build
+```
 
 ## Run instruction
 
