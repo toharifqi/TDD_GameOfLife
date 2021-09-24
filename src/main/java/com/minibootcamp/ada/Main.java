@@ -13,6 +13,10 @@ class Cell {
             return false;
         }
 
+        if (aliveNeighbors > 3) {
+            return false;
+        }
+
         return true;
     }
 }

@@ -27,4 +27,11 @@ class BoardTest {
 
         assertTrue(cell.getNewState());
     }
+
+    @Test
+    public void testGetCellNewStateGivenMore3NeighborShouldReturnFalse() {
+        Cell cell = new Cell(true, 4);
+
+        assertFalse(cell.getNewState());
+    }
 }
