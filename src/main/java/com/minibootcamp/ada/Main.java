@@ -8,7 +8,12 @@ class Cell {
     }
 
     public boolean getNewState() {
-        return false;
+
+        if (aliveNeighbors < 2) {
+            return false;
+        }
+
+        return true;
     }
 }
 
