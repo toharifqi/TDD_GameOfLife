@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class BoardTest {
+class CellTest {
 
     @Test
     public void testGetCellNewStateGiven0NeighborShouldReturnFalse() {
