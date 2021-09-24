@@ -22,6 +22,10 @@ class Cell {
             }
         } else {
 
+            if (aliveNeighbors == 3) {
+                return true;
+            }
+
             return false;
         }
 
